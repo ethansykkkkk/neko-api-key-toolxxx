@@ -389,12 +389,7 @@ const LogsTable = () => {
                         header="调用详情"
                         itemKey="2"
                         extra={
-                            <div style={{ display: 'flex', alignItems: 'center' }}>
-                                <Tag color='green' style={{ marginRight: 5 }}></Tag>
-                                <Button icon={<IconDownload />} theme='borderless' type='primary' onClick={(e) => exportCSV(e)} disabled={!tokenValid || logs.length === 0}>
-                                    
-                                </Button>
-                            </div>
+
                         }
                         disabled={!tokenValid}
                     >
