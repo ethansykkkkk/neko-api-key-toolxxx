@@ -388,9 +388,6 @@ const LogsTable = () => {
                     <Panel
                         header="调用详情"
                         itemKey="2"
-                        extra={
-
-                        }
                         disabled={!tokenValid}
                     >
                         <Spin spinning={loading}>
