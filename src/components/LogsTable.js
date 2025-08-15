@@ -296,7 +296,7 @@ const LogsTable = () => {
                                 <br /><br />
                                 <Text type="secondary">
                                     已用额度：{balance === 100000000 ? "不进行计算" : usage === "未知" ? "未知" : `$${usage.toFixed(3)}`}
-                                </Text>
+                                </Text> 
                             </div>
                         </Spin>
                     </Panel>
