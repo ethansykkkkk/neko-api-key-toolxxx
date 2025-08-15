@@ -297,10 +297,6 @@ const LogsTable = () => {
                                 <Text type="secondary">
                                     已用额度：{balance === 100000000 ? "不进行计算" : usage === "未知" ? "未知" : `$${usage.toFixed(3)}`}
                                 </Text>
-                                <br /><br />
-                                <Text type="secondary">
-                                    有效期至：{accessdate === 0 ? '永不过期' : accessdate === "未知" ? '未知' : renderTimestamp(accessdate)}
-                                </Text>
                             </div>
                         </Spin>
                     </Panel>
