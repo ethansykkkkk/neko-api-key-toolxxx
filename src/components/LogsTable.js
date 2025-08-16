@@ -213,7 +213,7 @@ const LogsTable = () => {
 
     const copyTokenInfo = (e) => {
         e.stopPropagation();
-        const info = `令牌总额: ${balance === 100000000 ? '无限' : `$${balance.toFixed(3)}`}
+        const info = `密钥总额: ${balance === 100000000 ? '无限' : `$${balance.toFixed(3)}`}
 剩余额度: ${balance === 100000000 ? '无限制' : `$${(balance - usage).toFixed(3)}`}
 已用额度: ${balance === 100000000 ? '不进行计算' : `$${usage.toFixed(3)}`}
 有效期至: ${accessdate === 0 ? '永不过期' : renderTimestamp(accessdate)}`;
@@ -279,7 +279,7 @@ const LogsTable = () => {
                         itemKey="1"
                         extra={
                             <Button icon={<IconCopy />} theme='borderless' type='primary' onClick={(e) => copyTokenInfo(e)} disabled={!tokenValid}>
-                                复制令牌信息
+                                复制密钥信息
                             </Button>
                         }
                         disabled={!tokenValid}
