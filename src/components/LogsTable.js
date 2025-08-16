@@ -275,7 +275,7 @@ const LogsTable = () => {
             }}>
                 {process.env.REACT_APP_SHOW_BALANCE === "true" && (
                     <Panel
-                        header="令牌信息"
+                        header="密钥信息"
                         itemKey="1"
                         extra={
                             <Button icon={<IconCopy />} theme='borderless' type='primary' onClick={(e) => copyTokenInfo(e)} disabled={!tokenValid}>
@@ -287,7 +287,7 @@ const LogsTable = () => {
                         <Spin spinning={loading}>
                             <div style={{ marginBottom: 16 }}>
                                 <Text type="secondary">
-                                    令牌总额：{balance === 100000000 ? "无限" : balance === "未知" ? "未知" : `$${balance.toFixed(3)}`}
+                                    密钥总额：{balance === 100000000 ? "无限" : balance === "未知" ? "未知" : `$${balance.toFixed(3)}`}
                                 </Text>
                                 <br /><br />
                                 <Text type="secondary">
